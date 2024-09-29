@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap');
+
+/* Estilos gerais da página */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+h2.titulo {
+    color: black;
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 90%;
+    margin: 0 auto
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: lime;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Botão de voltar para o topo */
+
+#returnToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+#returnToTop.show {
+    display: block;
+}
+
+#returnToTop:hover {
+    opacity: 1;
+}
+
+/* CABEÇALHO */
+header {
+    padding: 40px 5%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    display: inline-block;
+    color: rgb(26, 29, 29);
+    text-decoration: none;
+    font-size: 28px
+}
+
+header a:hover {
+    color: rgb(40, 186, 253);
+    transform: scale(1.1);
+    transition: .275s ease-in-out;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0px 60px;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px rgba(0, 128, 0, 0.726);
+    transform: scale(1.07);
+    transition: .275s ease;
+}
+
+/* Estilo do topo do site */
+
+section.topo-do-site {
+    padding: 100px 5% 200px;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.topo-do-site h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 52px;
+}
+
+.topo-do-site .texto_topo_site p {
+    font-weight: 400;
+    text-align: justify;
+    margin: 40px 0px;
+}
+
+.topo-do-site .imagem_topo_site img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* PERSONALIZAÇÕES DO SOBRE MIM */
+
+section.sobre {
+    padding: 30px 5% 200px;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 90px;
+}
+
+.sobre h3 {
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.sobre .txt_sobre p {
+    margin: 20px 0;
+    text-align: justify;
+    color: black;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/*  Linha do tempo */
+.linha_do_tempo {
+    margin: 30px auto;
+    max-width: 100%;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    color: black;
+}
+
+.linha_do_tempo__component {
+    margin: 0 20px 20px 20px;
+}
+
+.linha_do_tempo__component--bg {
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.linha_do_tempo__component--bottom {
+    margin-bottom: 0;
+}
+
+.linha_do_tempo__middle {
+    position: relative;
+    background: #97BC62;
+}
+
+.linha_do_tempo__point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: #2C5F2D;
+    border-radius: 50%;
+}
+
+.linha_do_tempo__point--bottom {
+    top: initial;
+    bottom: 0;
+}
+
+.linha_do_tempo__date--right {
+    text-align: right;
+}
+
+.linha_do_tempo__title {
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+.linha_do_tempo__paragraph {
+    line-height: 1.5;
+}
+
+/* Estilo dos links úteis */
+
+section.links {
+    padding: 40px 5% 250px;
+}
+
+section.links .flex {
+    gap: 60px;
+}
+
+.links .box_infos {
+    flex: 1;
+    color: black;
+    padding: 40px;
+    border: 2px solid black;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .275s ease;
+    cursor: pointer;
+
+}
+
+.links .box_infos:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.658);
+}
+
+.links .box_infos a {
+    text-decoration: none;
+    color: inherit
+}
+
+.links .box_infos i {
+    font-size: 90px;
+}
+
+.links .box_infos h3 {
+    font-size: 42px;
+    margin: 18px 0px;
+}
+
+.links .box_infos span {
+    color: darkgreen;
+}
