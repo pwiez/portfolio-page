@@ -210,21 +210,18 @@
 
         <button id="returnToTop"><i class="bi bi-arrow-bar-up"></i> Topo</button>
         <script>
-            // Show the button when scrolling down
             window.onscroll = function () {
                 const button = document.getElementById('returnToTop');
                 if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                    button.classList.add('show'); // Show button
+                    button.classList.add('show');
                 } else {
-                    button.classList.remove('show'); // Hide button
+                    button.classList.remove('show');
                 }
             };
-
-            // Scroll to the top when the button is clicked
             document.getElementById('returnToTop').onclick = function () {
                 window.scrollTo({
                     top: 0,
-                    behavior: 'smooth' // Smooth scroll effect
+                    behavior: 'smooth'
                 });
             };
         </script>
